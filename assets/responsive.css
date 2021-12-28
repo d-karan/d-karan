@@ -1,0 +1,206 @@
+/*desktop responsive*/
+.partnersection {
+    background-color: #fff;
+}
+.landing-footer {
+    background-color: #fff;
+}
+footer.section.section-footer {
+    padding: 0.75rem;
+}
+
+.section-footer p {
+    margin: 0;
+}
+ul.socialicons {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+ul.socialicons>li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+ul.socialicons>li img {
+    width: 100%;
+    height: 100%;
+}
+.landing > div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    padding: 20px 0;
+    margin: 20px auto !important;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+    max-width: 1345px;
+    margin: 0 auto;
+}
+
+.targeted h2 {
+    font-weight: 300;
+}
+h1, .h1 {
+    font-size: 2em;
+}
+.cont{
+	max-width: 1345px;
+	margin: 0 auto;
+}
+.btnpartner {
+    padding: 0 60px;
+}
+.row{
+--gutter-x: 1.5rem;
+--gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+margin-top: calc(-1 * var(--gutter-y));
+margin-right: calc(-.5 * var(--gutter-x));
+margin-left: calc(-.5 * var(--gutter-x));
+padding: 20px 0;
+}
+div#secondsection {
+    display: block;
+    max-width: 1250px;
+}
+#secondsection>div {
+    width: 49%;
+    display: inline-block;
+}
+div#thirdsection {
+    display: block;
+}
+.partenershiptext {
+    max-width: 51ch;
+    margin-left: 0;
+}
+.landing div:nth-child(2) {
+    margin-right: 0;
+}
+header.navbar {
+    max-width: 1175px;
+    margin: 0 auto;
+}
+span.dots {
+    padding: 0 5px;
+}
+@media only screen and (min-width: 1400px){
+
+header.navbar {
+    max-width: 1320px;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap!important;
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.landing > div {
+    max-width: 1500px;
+}
+div#secondsection {
+    max-width: 1250px;
+}
+}
+.landing .imgcontainer img {
+    width: 100%;
+    max-width: 100%;
+}
+img.handicon {
+    width: 8%;
+}
+/*tablet responsive*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+img.mobileres {
+    width: 45%;
+}
+#firstsection img.mobileres {
+    width: 45%;
+}
+
+}
+/*mobile responsive*/
+@media screen and (max-width: 767px){
+
+h1, .h1 {
+    font-size: 10vw;
+}
+	img.mobileres,.mobileres {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+/*
+header css start
+*/
+section.navbar-section {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+header.navbar.sslnav {
+    padding-bottom: 0 !important;
+}
+
+.sslnav .sslnavlogo {
+    width: 100%;
+}
+
+/*
+header css end
+*/
+/* main section css start */
+#secondsection>div {
+    width: 100%;
+}
+.landing > div {
+    margin-top: 0;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 10px 20px;
+    text-align: center;
+    align-items: center;
+}
+.landing div:nth-child(2) {
+    margin-right: 0;
+}
+.partenershiptext {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.landing .targeted .btn {
+    width: 100%;
+}
+/* main section  css end */
+
+/*footer css start*/
+.landing > div.landing-footer {
+    align-items: flex-start;
+    text-align: left;
+}
+.ssl-footer a {
+    display: none;
+}
+footer.section.section-footer {
+    padding: 0;
+}
+span.dots {
+    display: none;
+}
+/*footer css end*/
+}
