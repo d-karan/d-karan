@@ -149,10 +149,10 @@ span.dots {
     font-size: 1.8em;
 }
 .desktop{
-display: block;
+display: block !important;
 }
 .mobile{
-display: none;
+display: none !important;
 }
 a.btn.btn-grey {
     background-color: #4f4d59;
