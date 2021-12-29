@@ -194,14 +194,13 @@ div#secondsection {
 img.handicon {
     width: 8%;
 }
+.landing-footer {
+    background-color: #f7f7f7;
+}
 /*mobile responsive*/
 @media screen and (max-width: 1024px){
-.desktop{
-display: none;
-}
-.mobile{
-display: block;
-}
+.desktop{display: none !important;}
+.mobile{display: block !important;}
 
 h1, .h1 {
     font-size: 10vw;
