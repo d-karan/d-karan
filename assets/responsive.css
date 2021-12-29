@@ -1,4 +1,8 @@
 /*desktop responsive*/
+p.comment strong {
+    color: #01bfa5;
+}
+
 .partnersection {
     background-color: #fff;
 }
@@ -51,8 +55,8 @@ h1, .h1 {
     font-size: 2em;
 }
 .cont{
-	max-width: 1345px;
-	margin: 0 auto;
+    max-width: 1345px;
+    margin: 0 auto;
 }
 .btnpartner {
     padding: 0 60px;
@@ -74,9 +78,12 @@ div#secondsection {
 #secondsection>div {
     width: 49%;
     display: inline-block;
+    text-align: center;
 }
 div#thirdsection {
     display: block;
+    padding-left: 0;
+    padding-right: 0;
 }
 .partenershiptext {
     max-width: 51ch;
@@ -92,7 +99,73 @@ header.navbar {
 span.dots {
     padding: 0 5px;
 }
-@media only screen and (min-width: 1400px){
+.landing .imgcontainer {
+    margin-top: 10px;
+}
+.span6 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    /*background-color: rgba(39,41,43,0.03);
+    border: 1px solid rgba(39,41,43,0.1);*/
+    flex: 1 0 0%;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--gutter-x) * .5);
+    padding-left: calc(var(--gutter-x) * .5);
+    margin-top: var(--gutter-y);
+}
+.span8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+.span4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+.ml100{
+  margin-left: 100px;
+  margin-top: 25px;
+}
+.cont.firstimg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.imgcontainer {
+    position: relative;
+}
+.firstimg h2 {
+    color: #000;
+    font-size: 2.8em;
+}
+.cont.secondimg {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-55%);
+    left: 22%;
+}
+.secondimg h2 {
+    color: #000;
+    font-size: 1.8em;
+}
+.desktop{
+display: block;
+}
+.mobile{
+display: none;
+}
+a.btn.btn-grey {
+    background-color: #4f4d59;
+    color: #fff;
+    padding: 0.35rem 2.4rem;
+    text-transform: uppercase;
+    font-size: 19px;
+    height: auto;
+}
+body {
+    color: #000;
+}
+@media only screen and (min-width: 1025px){
 
 header.navbar {
     max-width: 1320px;
@@ -121,23 +194,19 @@ div#secondsection {
 img.handicon {
     width: 8%;
 }
-/*tablet responsive*/
-@media screen and (min-width: 768px) and (max-width: 1024px){
-img.mobileres {
-    width: 45%;
-}
-#firstsection img.mobileres {
-    width: 45%;
-}
-
-}
 /*mobile responsive*/
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1024px){
+.desktop{
+display: none;
+}
+.mobile{
+display: block;
+}
 
 h1, .h1 {
     font-size: 10vw;
 }
-	img.mobileres,.mobileres {
+    img.mobileres,.mobileres {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -186,6 +255,27 @@ header css end
 .landing .targeted .btn {
     width: 100%;
 }
+.span6 {
+    flex: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    padding: 0 0;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.firstimg h2 {
+    font-size: 20px;
+}
 /* main section  css end */
 
 /*footer css start*/
@@ -202,5 +292,42 @@ footer.section.section-footer {
 span.dots {
     display: none;
 }
+.firstimg p {
+    font-size: 15px;
+    color: #000;
+}
+.secondimg p {
+    font-size: 15px;
+    color: #000;
+}
+.cont.secondimg {
+    left: 0;
+}
+.secondimg h2 {
+    color: #000;
+    font-size: 22px;
+}
 /*footer css end*/
+}
+/*tablet responsive*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.secondimg h2 {
+    color: #000;
+    font-size: 2.8rem;
+}
+.firstimg h2 {
+    font-size: 3rem;
+}
+.firstimg p {
+    font-size: 26px;
+    color: #000;
+}
+.secondimg p {
+    font-size: 26px;
+    color: #000;
+}
+a.btn.btn-grey {
+    padding: 1.35rem 2.4rem;
+    font-size: 30px;
+}
 }
