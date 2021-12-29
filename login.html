@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="js-focus-visible" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Now Accredited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="assets/layout.css">
+    <link rel="stylesheet" href="assets/responsive.css">
+    <script>
+        function copyURI(evt) {
+            evt.preventDefault();
+            let element = document.getElementById("copy-profile-link");
+            navigator.clipboard.writeText(evt.target.getAttribute('href')).then(() => {
+                /* clipboard successfully set */
+                element.setAttribute('data-tooltip', 'Copied!')
+            }, () => {
+                /* clipboard write failed */
+                element.setAttribute('data-tooltip', 'Failed to Copy!')
+            });
+        }
+    </script>
+    <style type="text/css">
+        @font-face {
+          font-weight: 400;
+          font-style:  normal;
+          font-family: 'Circular-Loom';
+
+          src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+      }
+
+      @font-face {
+          font-weight: 500;
+          font-style:  normal;
+          font-family: 'Circular-Loom';
+
+          src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+      }
+
+      @font-face {
+          font-weight: 700;
+          font-style:  normal;
+          font-family: 'Circular-Loom';
+
+          src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+      }
+
+      @font-face {
+          font-weight: 900;
+          font-style:  normal;
+          font-family: 'Circular-Loom';
+
+          src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+      }</style>
+  </head>
+  <body>
+    <center class="mt20">
+        <a href="https://www.nowaccredited.org/">
+            <img class="sslnavlogo" src="assets/logo.png" alt="">
+        </a>
+    </center>
+    <center><h3>Build recognition to advance your expert profession</h3></center>
+    <div class="card col-6 p-centered col-sm-11 mt-2">
+        <div class="card-body">
+           <form method="post" action="https://www.nowaccredited.org/authorization/login/">
+            <input type="hidden" name="csrfmiddlewaretoken" value="dKsXTJpNPDhcqoYU4FIQlvfe0Xa96qsV71QssHgzYtplMRS3Lj7smkiPF3OX572x">
+            <div class="form-group">
+                <label class="form-label" for="username">Email address</label>
+                <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="email" maxlength="254" class="form-input" placeholder="Email" required="" id="id_username">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="password">Password (6 or more characters)</label>
+                <input type="password" name="password" autocomplete="current-password" class="form-input" placeholder="Password" required="" id="id_password">
+
+            </div>
+            <div class="form-group">
+                <p>By clicking Agree & Join, you agree to the NowAccredited <a href="#" class="alink">User Agreement</a>, <a href="#" class="alink">Privacy Policy</a>, and <a href="#" class="alink">Cookie Policy.</a></p>
+            </div>
+            <input class="btn btn-primary p-centered" type="submit" value="Agree & Join">
+            <div class="ortxt">
+                <hr><span>or</span><hr>
+            </div>
+            <div class="form-group">
+               <center> 
+                <a href="#" class="joinwgoogle"><img src="assets/Join with Google.png" alt=""></a>
+               </center>
+            </div>
+            <div class="form-group">
+                <center><p>Already have an account? <a href="#" class="alink">Sign In</a></p></center>
+            </div>
+
+        </form>
+    </div>
+</div>
+<center class="mt20"><p>Looking to Create a page for a business?  <a href="#" class="alink">Get help</a></p></center>
+</body>
+</html>

@@ -165,6 +165,45 @@ a.btn.btn-grey {
 body {
     color: #000;
 }
+.mt20{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.form-group p {
+    font-size: 14px;
+}
+.card.col-6 {
+    width: 35%;
+}
+.card .btn{
+    border: 2px solid #09bda4;
+    border-radius: 30px;
+    padding: 0.5rem 1.4rem;
+    height: auto;
+    text-transform: capitalize;
+    width: 100%;
+    font-weight: 500;
+}
+.alink{
+    color: #01bfa5;
+    font-weight: 600;
+}
+.ortxt>* {
+    display: inline-block;
+    width: 40%;
+}
+
+.ortxt>span {
+    width: 10%;
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+}
+
+.ortxt {
+    text-align: center;
+    padding: 25px 0 12px 0;
+}
 @media only screen and (min-width: 1025px){
 
 header.navbar {
@@ -196,6 +235,9 @@ img.handicon {
 }
 .landing-footer {
     background-color: #f7f7f7;
+}
+a.joinwgoogle>img {
+    width: 100%;
 }
 /*mobile responsive*/
 @media screen and (max-width: 1024px){
@@ -306,6 +348,17 @@ span.dots {
 .secondimg h2 {
     color: #000;
     font-size: 22px;
+}
+.mt20>* {
+    font-size: 15px;
+}
+
+center>h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.card.col-6 {
+    width: 85%;
 }
 /*footer css end*/
 }
